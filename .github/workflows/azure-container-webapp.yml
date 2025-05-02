@@ -60,7 +60,7 @@ jobs:
 
       - name: Build and push container image to registry
         run: |
-          docker build -t cdemo12.azurecr.io:${{github.sha}}
+          docker build -t cdemo12.azurecr.io:${{github.sha}} .
           docker push cdemo12.azurecr.io:${{github.sha}}
 
   # deploy:
