@@ -88,5 +88,5 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: "huggingfaceFastAPI"
+          app-name: "demowebappdocker"
           images: 'cdemo12.azurecr.io/${{ env.REPO }}:${{ github.sha }}'
